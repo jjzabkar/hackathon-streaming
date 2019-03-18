@@ -4,7 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -12,7 +14,10 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order {
-    public List<LineItem> lineItems;
+    private List<LineItem> lineItems;
     private String referenceOrderId;
     private Long orderId;
+    private Status status;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.TIME)
+    private LocalDateTime updateDate;
 }
