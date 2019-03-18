@@ -1,0 +1,16 @@
+{
+  "license": "UNLICENSED",
+  "cwd": "src/main/resources/vue",
+  "scripts": {
+    "install": "yarn --cwd $npm_package_cwd install",
+    "dev": "yarn serve",
+    "start": "yarn serve",
+    "serve": "yarn --cwd $npm_package_cwd serve",
+    "build": "yarn --cwd $npm_package_cwd build",
+    "lint": "yarn --cwd $npm_package_cwd lint",
+    "test": "yarn --cwd $npm_package_cwd test",
+    "test:e2e": "yarn --cwd $npm_package_cwd test:e2e",
+    "test:unit": "yarn --cwd $npm_package_cwd test:unit",
+    "storybook": "yarn --cwd $npm_package_cwd storybook"
+  }
+}
