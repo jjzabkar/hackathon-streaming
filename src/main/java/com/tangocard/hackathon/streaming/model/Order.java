@@ -13,4 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 public class Order {
     public List<LineItem> lineItems;
+    private String referenceOrderId;
+    private Long orderId;
 }
