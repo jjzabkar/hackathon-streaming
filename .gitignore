@@ -1,0 +1,27 @@
+# Package Files #
+*.jar
+!src/main/docker/jce/*.jar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+bower_components
+node_modules
+npm-debug.log
+.tmp/
+dist/
+main.css
+main.css.map
+node/
+opstools/
+
+### IntelliJ IDEA ###
+.idea/*
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
+*.iws
+*.iml
+.ipr
+target/
+pom.xml.bak
+./yarn.lock
